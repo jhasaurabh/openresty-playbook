@@ -11,3 +11,4 @@
      - "./configure --with-pcre-jit --with-pcre --with-luajit --with-http_ssl_module"
      - make -j{{ansible_processor_cores}}
      - make install
+  become: yes

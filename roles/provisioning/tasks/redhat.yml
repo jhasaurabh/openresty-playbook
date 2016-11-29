@@ -6,3 +6,4 @@
      - pcre-devel
      - openssl-devel
      - gcc
+  become: yes
