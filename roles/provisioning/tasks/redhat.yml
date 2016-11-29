@@ -1,6 +1,6 @@
 ---
 - name: installing dependencies
-  package: name={{items}} state=latest
+  package: name={{item}} state=installed
   with_items:
      - readline-devel
      - pcre-devel
