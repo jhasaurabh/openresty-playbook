@@ -1,0 +1,11 @@
+- name: installing dependencies
+  package: name={{item}} state=installed
+  with_items:
+     - libreadline-dev
+     - libncurses5-dev
+     - libpcre3-dev
+     - libssl-dev
+     - perl
+     - make
+     - build-essential
+  become: yes

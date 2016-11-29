@@ -1,0 +1,8 @@
+---
+- name: running playbook for openresty with select modules
+  hosts: openresty
+  gather_facts: yes
+  remote_user: root
+  roles:
+    - provisioning
+    - installation

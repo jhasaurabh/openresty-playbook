@@ -1,0 +1,8 @@
+---
+- name: installing dependencies
+  package: name={{items}} state=latest
+  with_items:
+     - readline-devel
+     - pcre-devel
+     - openssl-devel
+     - gcc

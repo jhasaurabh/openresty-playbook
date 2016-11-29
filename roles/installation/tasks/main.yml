@@ -1,0 +1,13 @@
+---
+
+- name: download and unarchive openresty tarball
+  unarchive: src={{download_url}} dest={{download_dir}} remote_src=yes
+  register: tar
+  become: yes
+
+- name: configure --with-pcre-jit --with-pcre --with-luajit -with-http_ssl_module 
+  shell: "{{item}}  chdir={{ openresty_dir }}"
+  with_items:
+     - "./configure --with-pcre-jit --with-pcre --with-luajit --with-http_ssl_module"
+     - make -j{{ansible_processor_cores}}
+     - make install

@@ -1,0 +1,4 @@
+version: "1.11.2.2"
+download_url: "https://openresty.org/download/openresty-{{version}}.tar.gz"
+download_dir: "/opt"
+openresty_dir: "{{download_dir}}/openresty-{{version}}"
