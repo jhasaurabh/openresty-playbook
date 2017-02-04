@@ -1,4 +1,4 @@
-#Author: Saurabh Kumar Jha
+# Author: Saurabh Kumar Jha
 # openresty-playbook
 
 This playbook assumes that ansible has ssh access to the remote machine via root user..
